@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AttendanceDataSet" targetNamespace="http://tempuri.org/AttendanceDataSet.xsd" xmlns:mstns="http://tempuri.org/AttendanceDataSet.xsd" xmlns="http://tempuri.org/AttendanceDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AttendanceDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="AttendanceDataSet" msprop:Generator_DataSetName="AttendanceDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Attendance" msprop:Generator_RowEvHandlerName="AttendanceRowChangeEventHandler" msprop:Generator_RowDeletedName="AttendanceRowDeleted" msprop:Generator_RowDeletingName="AttendanceRowDeleting" msprop:Generator_RowEvArgName="AttendanceRowChangeEvent" msprop:Generator_TablePropName="Attendance" msprop:Generator_RowChangedName="AttendanceRowChanged" msprop:Generator_RowChangingName="AttendanceRowChanging" msprop:Generator_TableClassName="AttendanceDataTable" msprop:Generator_RowClassName="AttendanceRow" msprop:Generator_TableVarName="tableAttendance" msprop:Generator_UserTableName="Attendance">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AttendanceDetailId" msprop:Generator_ColumnPropNameInRow="AttendanceDetailId" msprop:Generator_ColumnPropNameInTable="AttendanceDetailIdColumn" msprop:Generator_ColumnVarNameInTable="columnAttendanceDetailId" msprop:Generator_UserColumnName="AttendanceDetailId" type="xs:string" />
+              <xs:element name="TimeInDate" msprop:Generator_ColumnPropNameInRow="TimeInDate" msprop:Generator_ColumnPropNameInTable="TimeInDateColumn" msprop:Generator_ColumnVarNameInTable="columnTimeInDate" msprop:Generator_UserColumnName="TimeInDate" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeOutDate" msprop:Generator_ColumnPropNameInRow="TimeOutDate" msprop:Generator_ColumnPropNameInTable="TimeOutDateColumn" msprop:Generator_ColumnVarNameInTable="columnTimeOutDate" msprop:Generator_UserColumnName="TimeOutDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Attendance" />
+      <xs:field xpath="mstns:AttendanceDetailId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

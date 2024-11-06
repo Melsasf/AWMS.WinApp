@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ComputedDataForGraphDataSet" targetNamespace="http://tempuri.org/ComputedDataForGraphDataSet.xsd" xmlns:mstns="http://tempuri.org/ComputedDataForGraphDataSet.xsd" xmlns="http://tempuri.org/ComputedDataForGraphDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ComputedDataForGraphDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ComputedDataForGraphDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ComputedDataForGraphDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ComputedDataForGraph" msprop:Generator_RowClassName="ComputedDataForGraphRow" msprop:Generator_RowEvHandlerName="ComputedDataForGraphRowChangeEventHandler" msprop:Generator_RowDeletedName="ComputedDataForGraphRowDeleted" msprop:Generator_RowDeletingName="ComputedDataForGraphRowDeleting" msprop:Generator_RowEvArgName="ComputedDataForGraphRowChangeEvent" msprop:Generator_TablePropName="ComputedDataForGraph" msprop:Generator_RowChangedName="ComputedDataForGraphRowChanged" msprop:Generator_UserTableName="ComputedDataForGraph" msprop:Generator_RowChangingName="ComputedDataForGraphRowChanging" msprop:Generator_TableClassName="ComputedDataForGraphDataTable" msprop:Generator_TableVarName="tableComputedDataForGraph">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KeyboardClickSum" msprop:Generator_UserColumnName="KeyboardClickSum" msprop:Generator_ColumnPropNameInTable="KeyboardClickSumColumn" msprop:Generator_ColumnPropNameInRow="KeyboardClickSum" msprop:Generator_ColumnVarNameInTable="columnKeyboardClickSum" type="xs:string" minOccurs="0" />
+              <xs:element name="KeyboardClickAverage" msprop:Generator_UserColumnName="KeyboardClickAverage" msprop:Generator_ColumnPropNameInTable="KeyboardClickAverageColumn" msprop:Generator_ColumnPropNameInRow="KeyboardClickAverage" msprop:Generator_ColumnVarNameInTable="columnKeyboardClickAverage" type="xs:string" minOccurs="0" />
+              <xs:element name="MouseClickSum" msprop:Generator_UserColumnName="MouseClickSum" msprop:Generator_ColumnPropNameInTable="MouseClickSumColumn" msprop:Generator_ColumnPropNameInRow="MouseClickSum" msprop:Generator_ColumnVarNameInTable="columnMouseClickSum" type="xs:string" minOccurs="0" />
+              <xs:element name="MouseClickAverage" msprop:Generator_UserColumnName="MouseClickAverage" msprop:Generator_ColumnPropNameInTable="MouseClickAverageColumn" msprop:Generator_ColumnPropNameInRow="MouseClickAverage" msprop:Generator_ColumnVarNameInTable="columnMouseClickAverage" type="xs:string" minOccurs="0" />
+              <xs:element name="LifestyleProcessCount" msprop:Generator_UserColumnName="LifestyleProcessCount" msprop:Generator_ColumnPropNameInTable="LifestyleProcessCountColumn" msprop:Generator_ColumnPropNameInRow="LifestyleProcessCount" msprop:Generator_ColumnVarNameInTable="columnLifestyleProcessCount" type="xs:string" minOccurs="0" />
+              <xs:element name="SocialMediaProcessCount" msprop:Generator_UserColumnName="SocialMediaProcessCount" msprop:Generator_ColumnPropNameInTable="SocialMediaProcessCountColumn" msprop:Generator_ColumnPropNameInRow="SocialMediaProcessCount" msprop:Generator_ColumnVarNameInTable="columnSocialMediaProcessCount" type="xs:string" minOccurs="0" />
+              <xs:element name="EntertainmentProcessCount" msprop:Generator_UserColumnName="EntertainmentProcessCount" msprop:Generator_ColumnPropNameInTable="EntertainmentProcessCountColumn" msprop:Generator_ColumnPropNameInRow="EntertainmentProcessCount" msprop:Generator_ColumnVarNameInTable="columnEntertainmentProcessCount" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductivityProcessCount" msprop:Generator_UserColumnName="ProductivityProcessCount" msprop:Generator_ColumnPropNameInTable="ProductivityProcessCountColumn" msprop:Generator_ColumnPropNameInRow="ProductivityProcessCount" msprop:Generator_ColumnVarNameInTable="columnProductivityProcessCount" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherProcessCount" msprop:Generator_UserColumnName="OtherProcessCount" msprop:Generator_ColumnPropNameInTable="OtherProcessCountColumn" msprop:Generator_ColumnPropNameInRow="OtherProcessCount" msprop:Generator_ColumnVarNameInTable="columnOtherProcessCount" type="xs:string" minOccurs="0" />
+              <xs:element name="DateFrom" msprop:Generator_UserColumnName="DateFrom" msprop:Generator_ColumnPropNameInTable="DateFromColumn" msprop:Generator_ColumnPropNameInRow="DateFrom" msprop:Generator_ColumnVarNameInTable="columnDateFrom" type="xs:string" minOccurs="0" />
+              <xs:element name="DateTo" msprop:Generator_UserColumnName="DateTo" msprop:Generator_ColumnPropNameInTable="DateToColumn" msprop:Generator_ColumnPropNameInRow="DateTo" msprop:Generator_ColumnVarNameInTable="columnDateTo" type="xs:string" minOccurs="0" />
+              <xs:element name="ProcessName" msprop:Generator_ColumnPropNameInRow="ProcessName" msprop:Generator_ColumnPropNameInTable="ProcessNameColumn" msprop:Generator_ColumnVarNameInTable="columnProcessName" msprop:Generator_UserColumnName="ProcessName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

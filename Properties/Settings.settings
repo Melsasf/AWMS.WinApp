@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WPCAA.WinApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApiAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://wpcaaapi20241020202434-resourcegroup.azurewebsites.net/</Value>
+    </Setting>
+    <Setting Name="ApiAddressProd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://wpcaaapi20241020202434-resourcegroup.azurewebsites.net/</Value>
+    </Setting>
+    <Setting Name="ApiAddressLocal" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://localhost:44332</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

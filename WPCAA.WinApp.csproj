@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Reports\AttendancesReport.rdlc" />
+    <None Remove="Reports\DailyClicksReport.rdlc" />
+    <None Remove="Reports\HourlyClicksReport.rdlc" />
+    <None Remove="Reports\MonthlyClicksReport.rdlc" />
+    <None Remove="Reports\ProcessesReport.rdlc" />
+    <None Remove="Reports\Test.rdlc" />
+    <None Remove="Reports\TrackingDetailReport.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\TrackingDetailReport.rdlc" />
+    <EmbeddedResource Include="Reports\AttendancesReport.rdlc" />
+    <EmbeddedResource Include="Reports\ProcessesReport.rdlc" />
+    <EmbeddedResource Include="Reports\MonthlyClicksReport.rdlc" />
+    <EmbeddedResource Include="Reports\HourlyClicksReport.rdlc" />
+    <EmbeddedResource Include="Reports\DailyClicksReport.rdlc" />
+    <EmbeddedResource Include="Reports\Test.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DataSets\AttendanceDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AttendanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSets\ComputedDataForGraphDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComputedDataForGraphDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSets\TrackingDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TrackingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MouseKeyHook" Version="5.6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.16" />
+    <PackageReference Include="RestSharp" Version="107.3.0" />
+    <PackageReference Include="ScottPlot.WinForms" Version="4.1.27" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DataSets\AttendanceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AttendanceDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSets\ComputedDataForGraphDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComputedDataForGraphDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSets\TrackingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrackingDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{c0c07587-41a7-46c8-8fbd-3f9c8ebe2ddc}" />
+  </ItemGroup>
+
+</Project>

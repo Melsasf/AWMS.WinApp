@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportDataSet" targetNamespace="http://tempuri.org/ReportDataSet.xsd" xmlns:mstns="http://tempuri.org/ReportDataSet.xsd" xmlns="http://tempuri.org/ReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ReportDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tracking" msprop:Generator_RowClassName="TrackingRow" msprop:Generator_RowEvHandlerName="TrackingRowChangeEventHandler" msprop:Generator_RowDeletedName="TrackingRowDeleted" msprop:Generator_RowDeletingName="TrackingRowDeleting" msprop:Generator_RowEvArgName="TrackingRowChangeEvent" msprop:Generator_TablePropName="Tracking" msprop:Generator_RowChangedName="TrackingRowChanged" msprop:Generator_UserTableName="Tracking" msprop:Generator_RowChangingName="TrackingRowChanging" msprop:Generator_TableClassName="TrackingDataTable" msprop:Generator_TableVarName="tableTracking">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TrackingId" msprop:Generator_UserColumnName="TrackingId" msprop:Generator_ColumnPropNameInTable="TrackingIdColumn" msprop:Generator_ColumnPropNameInRow="TrackingId" msprop:Generator_ColumnVarNameInTable="columnTrackingId" type="xs:string" minOccurs="0" />
+              <xs:element name="AttendanceDetailId" msprop:Generator_UserColumnName="AttendanceDetailId" msprop:Generator_ColumnPropNameInTable="AttendanceDetailIdColumn" msprop:Generator_ColumnPropNameInRow="AttendanceDetailId" msprop:Generator_ColumnVarNameInTable="columnAttendanceDetailId" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeInDate" msprop:Generator_UserColumnName="TimeInDate" msprop:Generator_ColumnPropNameInTable="TimeInDateColumn" msprop:Generator_ColumnPropNameInRow="TimeInDate" msprop:Generator_ColumnVarNameInTable="columnTimeInDate" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeOutDate" msprop:Generator_UserColumnName="TimeOutDate" msprop:Generator_ColumnPropNameInTable="TimeOutDateColumn" msprop:Generator_ColumnPropNameInRow="TimeOutDate" msprop:Generator_ColumnVarNameInTable="columnTimeOutDate" type="xs:string" minOccurs="0" />
+              <xs:element name="AppUserId" msprop:Generator_UserColumnName="AppUserId" msprop:Generator_ColumnPropNameInTable="AppUserIdColumn" msprop:Generator_ColumnPropNameInRow="AppUserId" msprop:Generator_ColumnVarNameInTable="columnAppUserId" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
